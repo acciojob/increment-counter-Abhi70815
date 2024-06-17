@@ -1,8 +1,7 @@
-//your JS code here. If required.
-let inc= document.querySelector("#incrementBtn");
-count=0;
-inc.addEventListener('click', ()=>{
-    count++;
- document.querySelector("#counter").innerText=count++;
-	alert(count);
-})
+let count = 0; // Counter's initial value
+
+document.querySelector("#incrementBtn").addEventListener('click', () => {
+    alert(count); // Display the un-incremented value
+    count++; // Increment the counter
+    document.querySelector("#counter").innerText = count; // Update the counter display
+});
